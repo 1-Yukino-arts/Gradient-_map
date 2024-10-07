@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Gradient Modifier with Thumbnail</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Input para carregar a imagem do dispositivo -->
+    <input type="file" id="imageInput" accept="image/*" />
+    
+    <!-- Imagem do gradiente carregada pelo usuário -->
+    <img id="gradientImage" src="#" alt="Gradient" style="display:none;"/>
+
+    <!-- Miniatura da imagem -->
+    <canvas id="thumbnailCanvas" width="240" height="240" style="display:none; border:1px solid #000;"></canvas>
+
+    <!-- Botão para aplicar os efeitos -->
+    <button id="randomizeButton" style="display:none;" onclick="applyRandomEffects()">Randomize Effect</button>
+
+    <!-- Botão para salvar as imagens -->
+    <button id="saveButton" style="display:none;" onclick="saveImages()">Save Images</button>
+
+    <!-- Importar o script -->
+    <script src="js/script.js"></script>
+</body>
+</html>
